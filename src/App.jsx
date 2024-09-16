@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <div className="w-screen bg-mainBgColor h-screen">
+      <div className="w-screen bg-mainBgColor h-screen tracking-tight">
         <Header />
         <Hero />
         <About />
