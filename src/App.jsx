@@ -3,6 +3,9 @@ import { Button } from "./components/ui/button";
 import Hero from "./pages/Hero";
 import Header from "./layouts/Header";
 import About from "./pages/About";
+import Service from "./pages/Service";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +20,9 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <Service />
+        {/* <Skills /> */}
+        {/* <Contact /> */}
       </div>
     </>
   );

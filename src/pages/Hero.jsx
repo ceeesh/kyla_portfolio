@@ -9,7 +9,7 @@ const Hero = () => {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
             doloribus error aut consequuntur
           </p>
-          <div className=" text-8xl">
+          <div className="text-5xl md:text-8xl">
             <p>Brand Identity &</p>
             <p>Coaching for Designers</p>
             <p>and Creatives</p>

@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import kylaProfile from "../assets/kyla-profile2.jpg";
 import { useSmallScreen } from "@/helpers/utils";
 
-const About = () => {
+const Skills = () => {
   const isSmallScreen = useSmallScreen(640);
 
   return (
     <>
-      <div className={`bg-mainBgColor ${isSmallScreen ? "" : "aboutBg"} h-3/5 sm:h-4/5 lg:h-screen px-8 sm:px-32 lg:px-44 pt-20 lg:pt-36 flex flex-col`}>
+      <div className={`bg-mainBgColor ${isSmallScreen ? "" : "skillsBG"} h-3/5 sm:h-4/5 lg:h-screen px-8 sm:px-32 lg:px-44 pt-20 lg:pt-36 flex flex-col`}>
       {/* text-center h-fit sm:h-56 tracking-tight bg-white sm:bg-transparent p-8 */}
         <div className="text-center h-fit sm:h-56 tracking-tight bg-white sm:bg-transparent p-8">
           <p className="pb-10">
@@ -105,6 +105,6 @@ const About = () => {
       </div>
     </>
   );
-};
+}
 
-export default About;
+export default Skills

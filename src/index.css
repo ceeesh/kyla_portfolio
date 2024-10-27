@@ -59,6 +59,33 @@ body {
   background-size: contain;
 }
 
+.emailManagement {
+  background-image: url("./assets/email-management.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bookKeeping{
+  background-image: url("./assets/bookkeeping.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.meeting {
+  background-image: url("./assets/meeting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.servicesBG {
+  background-image: url("./assets/SERVICES.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
