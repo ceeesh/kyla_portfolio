@@ -13,7 +13,7 @@ const Service = () => {
       {/* <div className="bg-mainBgColor flex justify-items-center items-center"><img src={serviceIcon} className="bg-white rounded-full p-4"/></div> */}
       <div
         className={`bg-mainBgColor h-fit lg:h-screen flex flex-col gap-10 ${
-          isSmallScreen ? "pt-20" : ""
+          isSmallScreen ? "pt-20 pb-28" : ""
         }`}
       >
         <div className="flex justify-center">
@@ -59,7 +59,7 @@ const Service = () => {
             </div>
           </div>
         </div>
-        {/* <div className="mt-10">hello</div> */}
+        <div className="mt-10">hello</div>
       </div>
     </>
   );
