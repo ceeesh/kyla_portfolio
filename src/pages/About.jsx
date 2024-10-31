@@ -38,7 +38,7 @@ const About = () => {
             />
           </div>
           <div className="w-screen pt-4 sm:pt-10 md:pt-18">
-            <div className=" text-md sm:text-3xl md:text-4xl lg:text-5xl ">
+            <div className="text-[#254030] text-md sm:text-3xl md:text-4xl lg:text-5xl ">
               <p>I BELIEVE IN</p>
               <p>PEOPLE OVER</p>
               <p>PROFIT, TRUST</p>

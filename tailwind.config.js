@@ -53,7 +53,7 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			mainBgColor: "#EEEBE4",
+			mainBgColor: "#BAC7B0",
 			mainDescriptionColor: "#53524D",
 			mainTitleColor: "#F8F5EE"
   		}

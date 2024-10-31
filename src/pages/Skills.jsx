@@ -1,6 +1,13 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import kylaProfile from "../assets/kyla-profile2.jpg";
+import jira from "../assets/jira.png";
+import xero from "../assets/xero.png";
+import trello from "../assets/trello.png";
+import sharepoint from "../assets/sharepoint.png";
+import quickbooks from "../assets/quickbooks.png";
+import outlook from "../assets/outlook.png";
+import notion from "../assets/notion.png";
+import myob from "../assets/myob.png";
+import msofffice from "../assets/msoffice.png";
 import { useSmallScreen } from "@/helpers/utils";
 
 const Skills = () => {
@@ -8,103 +15,93 @@ const Skills = () => {
 
   return (
     <>
-      <div className={`bg-mainBgColor ${isSmallScreen ? "" : "skillsBG"} h-3/5 sm:h-4/5 lg:h-screen px-8 sm:px-32 lg:px-44 pt-20 lg:pt-36 flex flex-col`}>
-      {/* text-center h-fit sm:h-56 tracking-tight bg-white sm:bg-transparent p-8 */}
-        <div className="text-center h-fit sm:h-56 tracking-tight bg-white sm:bg-transparent p-8">
-          <p className="pb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
-          <p className="text3-xl sm:text-4xl lg:text-6xl">
-          Hey there! I’m Kyla, your friendly
-          </p>
-          <p className="text3-xl sm:text-4xl lg:text-6xl">
-            {" "}
-            Virtual Assistant and Bookkeeper
-            {" "}
-          </p>
-          {/* px-20 mt-5 */}
-          <Button variant="outline" className="w-full sm:w-fit mt-5">
-            CONTACT
-          </Button>
-        </div>
-      </div>
-      <div className="bg-mainBgColor h-fit sm:h-screen  flex flex-col  items-center">
-      
-        <div className="hidden sm:flex gap-10 lg:gap-32 r w-10/12 justify-center ">
-          <div className="w-screen h-fit flex flex-col">
-            <img
-              src={kylaProfile}
-              className="relative top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1   md:w-[400px] lg:w-[600px]"
-            />
-          </div>
-          <div className="w-screen pt-4 sm:pt-10 md:pt-18">
-            <div className=" text-md sm:text-3xl md:text-4xl lg:text-5xl ">
-              <p>I BELIEVE IN</p>
-              <p>PEOPLE OVER</p>
-              <p>PROFIT, TRUST</p>
-              <p>OVER DECEIT,</p>
-              <p>HARD-WORK OVER</p>
-              <p>DAY-DREAM.</p>
+      <div
+        className={`bg-mainBgColor h-fit lg:h-screen flex flex-col gap-10 ${
+          isSmallScreen ? "pb-28" : ""
+        }`}
+      >
+        <div className="flex justify-center px-5">
+          <div className="flex gap-2 flex-col text-center">
+            {/* <div className="pt-4">ICON</div> */}
+            <div className="text-3xl lg:text-5xl">Skills</div>
+            <div className="text-xl lg:text-2xl">Lorem ipsum </div>
+            <div className="text-base lg:text-base">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
+              libero minima laudantium quis perferendis quo, exercitationem eius
+              reiciendis, quas voluptatem dolore natus, ratione asperiores.
+              Suscipit animi doloribus illo modi velit?
             </div>
-            <div className="hidden xl:block">
-              <div className="pt-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus exercitationem pariatur reiciendis sapiente commodi
-                deserunt quas delectus soluta, nihil nesciunt porro ex fuga
-                facere nobis adipisci cupiditate eius ipsa reprehenderit. Lorem,
-                ipsum dolor sit amet consectetur adipisicing elit. Sed ab vitae
-                itaque placeat nesciunt quis veritatis exercitationem temporibus
-                fuga aliquam nobis, expedita debitis quaerat non ducimus magnam
-                quod. Aliquam, deleniti!
+          </div>
+        </div>
+        {/* flex flex-col lg:flex-row  gap-40 lg:gap-14  lg:gap-4 px-6 sm:px-20 */}
+        <div className="flex justify-center  px-5">
+          <div className="grid grid-cols-2 gap-4 lg:grid-cols-3   justify-center">
+            <div className="shadow-2xl rounded-lg lg:py-6 w-32 sm:w-40 py-2 lg:py-6">
+              <div className="flex justify-center ">
+                <img className="w-[60px] h-[60px]" src={jira} alt="" />
               </div>
+              <div className="text-center pt-4 pt-4">Jira</div>
+            </div>
 
-              <div className="pt-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas consectetur consequuntur error quod eos voluptatibus ex
-                eius doloribus reiciendis placeat! Provident modi consequatur
-                ipsam. Architecto itaque dignissimos harum corporis eos?
+            <div className="shadow-2xl rounded-lg lg:py-6 w-32 sm:w-40 py-2 lg:py-6">
+              <div className="flex justify-center ">
+                <img className="w-[60px] h-[60px]" src={xero} alt="" />
               </div>
+              <div className="text-center pt-4 pt-4">Xero</div>
             </div>
-          </div>
-        </div>
-        <div className="sm:hidden flex flex-col gap-2 lg:gap-32 justify-center ">
-          <div className="h-fit flex flex-col">
-            <img
-              src={kylaProfile}
-              // relative w-[170px] top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1 justify-items-center
-              className=""
-            />
-          </div>
-          <div className="pt-4 sm:pt-10 md:pt-18">
-            <div className="text-center text-md sm:text-3xl md:text-4xl lg:text-5xl ">
-              <p>
-                I BELIEVE IN PEOPLE OVER PROFIT, TRUST OVER DECEIT, HARD-WORK
-                OVER DAY-DREAM.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="px-6 sm:px-24 block xl:hidden text-center">
-          <div className="pt-8">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-            exercitationem pariatur reiciendis sapiente commodi deserunt quas
-            delectus soluta, nihil nesciunt porro ex fuga facere nobis adipisci
-            cupiditate eius ipsa reprehenderit. Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Sed ab vitae itaque placeat nesciunt
-            quis veritatis exercitationem temporibus fuga aliquam nobis,
-            expedita debitis quaerat non ducimus magnam quod. Aliquam, deleniti!
-          </div>
 
-          <div className="pt-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            consectetur consequuntur error quod eos voluptatibus ex eius
-            doloribus reiciendis placeat! Provident modi consequatur ipsam.
-            Architecto itaque dignissimos harum corporis eos?
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={trello} alt="" />
+              </div>
+              <div className="text-center pt-4">Trello</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={sharepoint} alt="" />
+              </div>
+              <div className="text-center pt-4">Sharepoint</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={quickbooks} alt="" />
+              </div>
+              <div className="text-center pt-4">Quickbooks</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={outlook} alt="" />
+              </div>
+              <div className="text-center pt-4">Outlook</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={notion} alt="" />
+              </div>
+              <div className="text-center pt-4">Notion</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center ">
+                <img className="w-[60px] h-[60px]" src={myob} alt="" />
+              </div>
+              <div className="text-center pt-4">Myob</div>
+            </div>
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={msofffice} alt="" />
+              </div>
+              <div className="text-center pt-4">Msofffice</div>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default Skills
+export default Skills;

@@ -12,11 +12,11 @@ const Service = () => {
     <>
       {/* <div className="bg-mainBgColor flex justify-items-center items-center"><img src={serviceIcon} className="bg-white rounded-full p-4"/></div> */}
       <div
-        className={`bg-mainBgColor h-fit lg:h-screen flex flex-col gap-10 ${
+        className={`bg-mainBgColor h-[1450px] sm:h-[1650px] lg:h-screen flex flex-col gap-10 ${
           isSmallScreen ? "pt-20 pb-28" : ""
         }`}
       >
-        <div className="flex justify-center">
+        <div className="flex justify-center px-6">
           <div className="flex gap-2 flex-col text-center">
             {/* <div className="pt-4">ICON</div> */}
             <div className="text-3xl lg:text-5xl">SERVICES</div>
@@ -25,16 +25,17 @@ const Service = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-14 lg:gap-4 px-6 sm:px-20">
+        <div className="flex flex-col lg:flex-row gap-40 lg:gap-14  lg:gap-4 px-6 sm:px-20">
           <div className="emailManagement  w-full h-52 sm:h-80 ">
             <div className="w-full h-full"></div>
             <div className="relative flex justify-center top-[-28px]   ">
               <div></div>
               <div className="px-6 py-4 bg-white">
-                QUICK LISTEN
+                Accounting
               </div>
               <div></div>
             </div>
+            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit</div>
           </div>
 
           <div className="bookKeeping  w-full h-52 sm:h-80 ">
@@ -42,10 +43,11 @@ const Service = () => {
             <div className="relative flex justify-center top-[-28px]   ">
               <div></div>
               <div className="px-6 py-4 bg-white">
-                QUICK LISTEN
+                Virtual Assistnace
               </div>
               <div></div>
             </div>
+            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, </div>
           </div>
 
           <div className="meeting  w-full h-52 sm:h-80">
@@ -53,13 +55,14 @@ const Service = () => {
             <div className="relative flex justify-center top-[-28px]   ">
               <div></div>
               <div className="px-6 py-4 bg-white">
-                QUICK LISTEN
+                Social Media Management
               </div>
               <div></div>
             </div>
+            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit</div>
           </div>
         </div>
-        <div className="mt-10">hello</div>
+    
       </div>
     </>
   );

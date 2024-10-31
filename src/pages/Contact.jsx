@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Contact = () => {
   return (
-    <div className="w-screen h-screen bg-mainBgColor flex  justify-center align-center">
+    <div className="w-screen h-screen bg-mainBgColor flex  justify-center align-center px-5">
       <div className=" flex flex-col justify-center align-center">
         <div className="max-w-xl mx-auto h-full flex flex-col items-center justify-center ">
           <h2 className="text-5xl lg:text-7xl font-bold mb-4 text-primary flex justify-center ">
