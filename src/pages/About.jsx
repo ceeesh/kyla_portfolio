@@ -14,6 +14,14 @@ import { useSmallScreen } from "@/helpers/utils";
 const About = () => {
   const isSmallScreen = useSmallScreen(640);
 
+  // Scroll to Contact section
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <div
@@ -34,9 +42,16 @@ const About = () => {
             Virtual Assistant and Bookkeeper{" "}
           </p>
           {/* px-20 mt-5 */}
-          <Button variant="outline" className="w-full sm:w-fit mt-5">
+          <button
+            className="mt-5 text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
+             hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300"
+            onClick={handleScrollToContact}
+          >
             CONTACT
-          </Button>
+          </button>
+          {/* <Button variant="outline" className="w-full sm:w-fit mt-5" onClick={handleScrollToContact}>
+            CONTACT
+          </Button> */}
         </div>
       </div>
       <div className="bg-mainBgColor h-fit sm:h-screen  flex flex-col  items-center">
@@ -84,9 +99,7 @@ const About = () => {
           </div>
           <div className="pt-4 sm:pt-10 md:pt-18">
             <div className="text-center text-md sm:text-3xl md:text-4xl lg:text-5xl">
-              <p>
-                ACCURACY AND EFFICIENCY NO MATTER THE CURRENCY
-              </p>
+              <p>ACCURACY AND EFFICIENCY NO MATTER THE CURRENCY</p>
             </div>
           </div>
         </div>
