@@ -8,6 +8,9 @@ import outlook from "../assets/outlook.png";
 import notion from "../assets/notion.png";
 import myob from "../assets/myob.png";
 import msofffice from "../assets/msoffice.png";
+import placeholder from "../assets/placeholder-logo.png";
+import gsuite from "../assets/g-suite.png";
+import canva from "../assets/canva.png";
 import { useSmallScreen } from "@/helpers/utils";
 
 const Skills = () => {
@@ -24,12 +27,9 @@ const Skills = () => {
           <div className="flex gap-2 flex-col text-center">
             {/* <div className="pt-4">ICON</div> */}
             <div className="text-3xl lg:text-5xl">Skills</div>
-            <div className="text-xl lg:text-2xl">Lorem ipsum </div>
+            {/* <div className="text-xl lg:text-2xl">Lorem ipsum </div> */}
             <div className="text-base lg:text-base">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-              libero minima laudantium quis perferendis quo, exercitationem eius
-              reiciendis, quas voluptatem dolore natus, ratione asperiores.
-              Suscipit animi doloribus illo modi velit?
+            My expertise and tools, working together to simplify and enhance your success!
             </div>
           </div>
         </div>
@@ -96,6 +96,52 @@ const Skills = () => {
                 <img className="w-[60px] h-[60px]" src={msofffice} alt="" />
               </div>
               <div className="text-center pt-4">Msofffice</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={placeholder} alt="" />
+              </div>
+              <div className="text-center pt-4">Netsuite</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={placeholder} alt="" />
+              </div>
+              <div className="text-center pt-4">Tradeshift</div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={gsuite} alt="" />
+              </div>
+              <div className="text-center pt-4">Google Suite
+              </div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={placeholder} alt="" />
+              </div>
+              <div className="text-center pt-4">Ariba SAP
+              </div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={placeholder} alt="" />
+              </div>
+              <div className="text-center pt-4">Coupa
+              </div>
+            </div>
+
+            <div className="shadow-2xl rounded-lg w-32 sm:w-40 py-2 lg:py-6 ">
+              <div className="flex justify-center">
+                <img className="w-[60px] h-[60px]" src={canva} alt="" />
+              </div>
+              <div className="text-center pt-4">Canva
+              </div>
             </div>
           </div>
         </div>

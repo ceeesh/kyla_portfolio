@@ -53,9 +53,9 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			mainBgColor: "#BAC7B0",
+			mainBgColor: "#FFFFFF",
 			mainDescriptionColor: "#53524D",
-			mainTitleColor: "#F8F5EE"
+			mainTitleColor: "#53524D"
   		}
   	}
   },

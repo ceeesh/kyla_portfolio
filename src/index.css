@@ -32,13 +32,18 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 400;
-  font-style: normal;
+  /* font-family: "Nanum Myeongjo", serif; */
+  /* font-weight: 400; */
+  /* font-style: normal; */
+
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  /* font-style: normal; */
 }
 
 .bgHero {
-  background-image: url("./assets/hero-bg.jpg");
+  background-image: url("./assets/bg-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,6 +55,17 @@ body {
   width: 100%;
   height: 1px; 
   background: #53524D; 
+}
+
+@media (max-width: 425px) {
+  .header::after {
+    content: "";
+    display: none;
+    width: 100%;
+    height: 1px; 
+    background: #53524D; 
+  }
+  
 }
 
 .aboutBg {

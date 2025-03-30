@@ -20,8 +20,12 @@ const Service = () => {
           <div className="flex gap-2 flex-col text-center">
             {/* <div className="pt-4">ICON</div> */}
             <div className="text-3xl lg:text-5xl">SERVICES</div>
-            <div className="text-xl lg:text-2xl">Lorem ipsum </div>
-            <div className="text-base lg:text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa libero minima laudantium quis perferendis quo, exercitationem eius reiciendis, quas voluptatem dolore natus, ratione asperiores. Suscipit animi doloribus illo modi velit?</div>
+            {/* <div className="text-xl lg:text-2xl">Lorem ipsum </div> */}
+            <div className="text-base lg:text-base">
+              If you need a reliable virtual assistant for financial management
+              and social media support, I’m here to help optimize your
+              operations. Here are the services I offer:
+            </div>
           </div>
         </div>
 
@@ -30,39 +34,43 @@ const Service = () => {
             <div className="w-full h-full"></div>
             <div className="relative flex justify-center top-[-28px]   ">
               <div></div>
-              <div className="px-6 py-4 bg-white">
-                Accounting
+              <div className="px-6 py-4 bg-white rounded-3xl">
+                Social Media Management
               </div>
               <div></div>
             </div>
-            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit</div>
+            <div className="text-center">
+              New to the game, but fueled by creativity—I’ll help your brand
+              shine on social media!
+            </div>
           </div>
 
           <div className="bookKeeping  w-full h-52 sm:h-80 ">
             <div className="w-full h-full"></div>
             <div className="relative flex justify-center top-[-28px]   ">
               <div></div>
-              <div className="px-6 py-4 bg-white">
-                Virtual Assistnace
-              </div>
+              <div className="px-6 py-4 bg-white rounded-3xl">Accounting</div>
               <div></div>
             </div>
-            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, </div>
+            <div className="text-center">
+            From invoices to balance sheets—I’ve got your back, virtually!
+            </div>
           </div>
 
           <div className="meeting  w-full h-52 sm:h-80">
             <div className="w-full h-full"></div>
             <div className="relative flex justify-center top-[-28px]   ">
               <div></div>
-              <div className="px-6 py-4 bg-white">
-                Social Media Management
+              <div className="px-6 py-4 bg-white rounded-3xl">
+                Virtual Assistance
               </div>
               <div></div>
             </div>
-            <div className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit</div>
+            <div className="text-center">
+            Your behind-the-scenes powerhouse—organized, efficient, and always ready to assist!
+            </div>
           </div>
         </div>
-    
       </div>
     </>
   );

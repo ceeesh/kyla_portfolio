@@ -6,14 +6,13 @@ const Contact = () => {
     <div className="w-screen h-screen bg-mainBgColor flex  justify-center align-center px-5">
       <div className=" flex flex-col justify-center align-center">
         <div className="max-w-xl mx-auto h-full flex flex-col items-center justify-center ">
-          <h2 className="text-5xl lg:text-7xl font-bold mb-4 text-primary flex justify-center ">
+          <h2 className="text-mainTitleColor text-5xl lg:text-7xl font-bold mb-4 flex justify-center text-center">
             Get In Touch
           </h2>
           <p className="text-center text-whiteSecondary mb-12 ">
-            Currently, I am looking for opportunities and accepting freelance
-            projects. If you think I am a good asset, kindly send me a message.
+          Now accepting freelance projects! Let’s work together—reach out and let’s talk!
           </p>
-          <Button variant="outline" className="px-20 mt-5">
+          <Button variant="outline" className="px-20 mt-5" href="mailto:reytakyla1@gmail.com">
             Let's Talk
           </Button>
           {/* <Button
