@@ -102,6 +102,10 @@ body {
   background-size: contain;
 }
 
+.contact-btn {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;

@@ -14,9 +14,9 @@ const Header = () => {
         {/* <div className="text-2xl">CAITLYN</div> */}
         <div>
           <ol className="flex gap-2">
-            <li><img src={linkedIn2} alt="" /></li>
-            <li><img src={facebook2} alt="" /></li>
-            <li><img src={instagram2} alt="" /></li>
+           <a href="https://www.linkedin.com/in/kyla-caitlyn-reyta-b81a44322/" target="_blank"> <li><img src={linkedIn2}  alt="" role="button"/></li></a>
+           <a href="https://www.facebook.com/kairiixoxo" target="_blank"> <li><img src={facebook2} alt="" role="button"/></li></a>
+           <a href="https://www.instagram.com/caitlr_/" target="_blank"> <li><img src={instagram2} alt="" role="button"/></li></a>
           </ol>
         </div>
       </div>

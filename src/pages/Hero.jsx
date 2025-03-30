@@ -8,7 +8,7 @@ const Hero = () => {
           <p className="pb-12 text-lg">
             {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
             doloribus error aut consequuntur */}
-            All in One Place. Helping Businesses stay organized, efficient, and
+            All in One Place. Helping businesses stay organized, efficient, and
             financially sound.
           </p>
           <div className="text-5xl md:text-8xl">

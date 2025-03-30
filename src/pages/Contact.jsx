@@ -12,9 +12,12 @@ const Contact = () => {
           <p className="text-center text-whiteSecondary mb-12 ">
           Now accepting freelance projects! Let’s work together—reach out and let’s talk!
           </p>
-          <Button variant="outline" className="px-20 mt-5" href="mailto:reytakyla1@gmail.com">
-            Let's Talk
-          </Button>
+          {/* <Button variant="outline" className="px-20 mt-5" href="mailto:reytakyla1@gmail.com">
+          <a className="text-mainTitleColor" href="mailto:ceejaymalacas17@gmail.com" target="_blank"> Let's Talk</a>
+          </Button> */}
+           <button className="px-20 mt-5 bg-mainBgColor border border-mainDescriptionColor hover:border-[#FFFFFF] hover:bg-mainDescriptionColor hover:text-mainDescriptionColor" href="mailto:reytakyla1@gmail.com">
+          <a className="contact-btn" href="mailto:reytakyla1@gmail.com" target="_blank"> Let's Talk</a>
+          </button>
           {/* <Button
             href="mailto:ceejaymalacas17@gmail.com"
             target="_blank"

@@ -48,7 +48,7 @@ const About = () => {
             />
           </div>
           <div className="w-screen pt-4 sm:pt-10 md:pt-18 text-mainDescriptionColor">
-            <div className="text-mainDescriptionColor  text-md sm:text-3xl md:text-4xl lg:text-5xl ">
+            <div className="text-mainDescriptionColor  text-md sm:text-3xl md:text-5xl lg:text-5xl ">
               <p>ACCURACY AND</p>
               <p>EFFICIENCY</p>
               <p>NO MATTER</p>
@@ -56,7 +56,7 @@ const About = () => {
             </div>
             <div className="hidden xl:block">
               <div className="pt-4">
-                I'm an Accounting Professional with over five years of
+                I'm an Accounting Professional with over seven years of
                 experience, specializing in Accounts Receivable (AR) with some
                 Accounts Payable (AP) exposure. I have worked with international
                 companies, handling cross-border transactions and ensuring
@@ -83,7 +83,7 @@ const About = () => {
             />
           </div>
           <div className="pt-4 sm:pt-10 md:pt-18">
-            <div className="text-center text-md sm:text-3xl md:text-4xl lg:text-5xl ">
+            <div className="text-center text-md sm:text-3xl md:text-4xl lg:text-5xl">
               <p>
                 ACCURACY AND EFFICIENCY NO MATTER THE CURRENCY
               </p>
@@ -92,7 +92,7 @@ const About = () => {
         </div>
         <div className="px-6 sm:px-24 block xl:hidden text-center">
           <div className="pt-8">
-            I'm an Accounting Professional with over five years of experience,
+            I'm an Accounting Professional with over seven years of experience,
             specializing in Accounts Receivable (AR) with some Accounts Payable
             (AP) exposure. I have worked with international companies, handling
             cross-border transactions and ensuring smooth financial operations
