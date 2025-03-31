@@ -63,7 +63,7 @@ const About = () => {
             />
           </div>
           <div className="w-screen pt-4 sm:pt-10 md:pt-18 text-mainDescriptionColor">
-            <div className="text-mainDescriptionColor  text-md sm:text-3xl md:text-5xl lg:text-5xl ">
+            <div className="text-mainDescriptionColor  text-md sm:text-3xl md:text-4xl lg:text-5xl ">
               <p>ACCURACY AND</p>
               <p>EFFICIENCY</p>
               <p>NO MATTER</p>
@@ -87,6 +87,25 @@ const About = () => {
                 organization.
               </div>
             </div>
+            <div className="mt-5">
+              See the proof in black and white, check out my certifications and
+              experience!
+            </div>
+            <div className="flex gap-2 mt-2">
+              <button
+                className=" text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
+             hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 w-40"
+              >
+                Download CV
+              </button>
+
+              <button
+                className="text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
+             hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 w-40"
+              >
+                Certificates
+              </button>
+            </div>
           </div>
         </div>
         <div className="sm:hidden flex flex-col gap-2 lg:gap-32 justify-center ">
@@ -97,7 +116,7 @@ const About = () => {
               className=""
             />
           </div>
-          <div className="pt-4 sm:pt-10 md:pt-18">
+          <div className="pt-4 sm:pt-10 md:pt-18 px-2 sm:px-0">
             <div className="text-center text-md sm:text-3xl md:text-4xl lg:text-5xl">
               <p>ACCURACY AND EFFICIENCY NO MATTER THE CURRENCY</p>
             </div>

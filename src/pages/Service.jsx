@@ -30,21 +30,6 @@ const Service = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-40 lg:gap-14  lg:gap-4 px-6 sm:px-20">
-          <div className="emailManagement  w-full h-52 sm:h-80 ">
-            <div className="w-full h-full"></div>
-            <div className="relative flex justify-center top-[-28px]   ">
-              <div></div>
-              <div className="px-6 py-4 bg-white rounded-3xl">
-                Social Media Management
-              </div>
-              <div></div>
-            </div>
-            <div className="text-center">
-              New to the game, but fueled by creativity—I’ll help your brand
-              shine on social media!
-            </div>
-          </div>
-
           <div className="bookKeeping  w-full h-52 sm:h-80 ">
             <div className="w-full h-full"></div>
             <div className="relative flex justify-center top-[-28px]   ">
@@ -53,7 +38,7 @@ const Service = () => {
               <div></div>
             </div>
             <div className="text-center">
-            From invoices to balance sheets—I’ve got your back, virtually!
+              From invoices to balance sheets—I’ve got your back, virtually!
             </div>
           </div>
 
@@ -67,7 +52,23 @@ const Service = () => {
               <div></div>
             </div>
             <div className="text-center">
-            Your behind-the-scenes powerhouse—organized, efficient, and always ready to assist!
+              Your behind-the-scenes powerhouse—organized, efficient, and always
+              ready to assist!
+            </div>
+          </div>
+
+          <div className="emailManagement  w-full h-52 sm:h-80 ">
+            <div className="w-full h-full"></div>
+            <div className="relative flex justify-center top-[-28px]   ">
+              <div></div>
+              <div className="px-6 py-4 bg-white rounded-3xl">
+                Social Media Management
+              </div>
+              <div></div>
+            </div>
+            <div className="text-center">
+              New to the game, but fueled by creativity—I’ll help your brand
+              shine on social media!
             </div>
           </div>
         </div>
