@@ -57,7 +57,7 @@ body {
   background: #53524D; 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 432px) {
   .header::after {
     content: "";
     display: none;
