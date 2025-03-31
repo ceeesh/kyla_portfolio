@@ -102,6 +102,24 @@ body {
   background-size: contain;
 }
 
+/* 640 */
+
+
+
+@media (max-width: 639px) {
+  .cv-cert {
+  display: flex;
+  }
+  
+}
+
+@media (min-width: 639px) {
+  .cv-cert {
+  display: none;
+  }
+  
+}
+
 
 h1 {
   font-size: 3.2em;

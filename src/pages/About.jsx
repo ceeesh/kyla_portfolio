@@ -139,6 +139,25 @@ const About = () => {
             approach to financial organization.
           </div>
         </div>
+        <div className="mt-5 px-3 text-center cv-cert">
+          See the proof in black and white, check out my certifications and
+          experience!
+        </div>
+        <div className="flex  gap-2 mt-5 cv-cert">
+          <button
+            className="text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
+             hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 "
+          >
+            Download CV
+          </button>
+
+          <button
+            className="text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
+             hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 "
+          >
+            Certificates
+          </button>
+        </div>
       </div>
     </>
   );
