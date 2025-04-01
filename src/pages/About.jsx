@@ -9,10 +9,21 @@ import image4 from "../assets/image4.jpeg";
 import image5 from "../assets/image5.jpeg";
 import image6 from "../assets/image6.jpeg";
 import image7 from "../assets/image7.jpeg";
+// import resume from "../assets/Cee Jay-Malacas-Resume-2024.pdf";
+import resume from "../assets/caitlyn_resume.pdf";
 import { useSmallScreen } from "@/helpers/utils";
 
 const About = () => {
   const isSmallScreen = useSmallScreen(640);
+
+  const downloadResume = () => {
+    const link = document.createElement("a");
+    link.href = resume;
+    link.download = "resume";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   // Scroll to Contact section
   const handleScrollToContact = () => {
@@ -95,6 +106,7 @@ const About = () => {
               <button
                 className=" text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
              hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 w-40"
+                onClick={downloadResume}
               >
                 Download CV
               </button>
@@ -102,6 +114,12 @@ const About = () => {
               <button
                 className="text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
              hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 w-40"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/drive/folders/1LP6sFJTK3kaHtCa4lAzdlFeh9oGju2wV",
+                    "_blank"
+                  )
+                }
               >
                 Certificates
               </button>
@@ -147,6 +165,7 @@ const About = () => {
           <button
             className="text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
              hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 "
+            onClick={downloadResume}
           >
             Download CV
           </button>
@@ -154,6 +173,12 @@ const About = () => {
           <button
             className="text-center border border-mainDescriptionColor text-mainDescriptionColor bg-[#FFFFFF]
              hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300 "
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/drive/folders/1LP6sFJTK3kaHtCa4lAzdlFeh9oGju2wV",
+                "_blank"
+              )
+            }
           >
             Certificates
           </button>

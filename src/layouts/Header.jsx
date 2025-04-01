@@ -1,22 +1,21 @@
 import React from "react";
-import linkedIn from "../assets/linkedin.png"
-import facebook from "../assets/facebook.png";
-import instagram from "../assets/instagram.png";
-import linkedIn2 from "../assets/header-icon-linkedin2.png";
-import facebook2 from "../assets/header-icon-fb.png";
-import instagram2 from "../assets/header-icon-instagram.png";
+import { socials } from "../data/data";
 
 const Header = () => {
   return (
     <header className=" bg-mainBgColor px-4 sm:px-44 py-4 fixed top-0 left-0 right-0 z-50">
       <div className="flex justify-between">
         <div className="text-xl text-mainTitleColor">CAIT</div>
-        {/* <div className="text-2xl">CAITLYN</div> */}
         <div>
           <ol className="flex gap-2">
-           <a href="https://www.linkedin.com/in/kyla-caitlyn-reyta-b81a44322/" target="_blank"> <li><img src={linkedIn2}  alt="" role="button"/></li></a>
-           <a href="https://www.facebook.com/kairiixoxo" target="_blank"> <li><img src={facebook2} alt="" role="button"/></li></a>
-           <a href="https://www.instagram.com/caitlr_/" target="_blank"> <li><img src={instagram2} alt="" role="button"/></li></a>
+            {socials &&
+              socials.map((social, key) => (
+                <a href={social.link} target="_blank" key={key}>
+                  <li>
+                    <img src={social.icon} alt={social.name} role="button" />
+                  </li>
+                </a>
+              ))}
           </ol>
         </div>
       </div>

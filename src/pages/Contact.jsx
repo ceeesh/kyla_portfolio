@@ -17,15 +17,6 @@ const Contact = () => {
             let’s talk!
           </p>
 
-          {/* <button
-            className="px-20 mt-5 bg-mainBgColor border border-mainDescriptionColor hover:border-[#FFFFFF] hover:bg-mainDescriptionColor hover:text-mainDescriptionColor"
-          >
-            <a className="contact-btn" href="mailto:reytakyla1@gmail.com" target="_blank">
-              Let's Talk
-            </a>
-            
-          </button> */}
-
           <button
             onClick={() =>
               (window.location.href = "mailto:reytakyla1@gmail.com")
@@ -35,6 +26,19 @@ const Contact = () => {
           >
             Let's Talk
           </button>
+
+          {/* <button
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/document/d/1z6871K_yLqmk4lhjVPXW8alpNSoy5qvKiGgjREYvwXk/edit?tab=t.0#heading=h.d2igf8cz6xn",
+                "_blank"
+              )
+            }
+            className="px-20 mt-5 bg-mainBgColor border border-mainDescriptionColor text-mainDescriptionColor 
+    hover:bg-mainDescriptionColor hover:text-[#FFFFFF] hover:border-[#FFFFFF] transition duration-300"
+          >
+            Let's Talk
+          </button> */}
         </div>
       </div>
     </div>
