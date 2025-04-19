@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import kylaProfile from "../assets/kyla-profile2.jpg";
 import image0 from "../assets/image0.jpeg";
@@ -9,12 +9,23 @@ import image4 from "../assets/image4.jpeg";
 import image5 from "../assets/image5.jpeg";
 import image6 from "../assets/image6.jpeg";
 import image7 from "../assets/image7.jpeg";
-// import resume from "../assets/Cee Jay-Malacas-Resume-2024.pdf";
 import resume from "../assets/caitlyn_resume.pdf";
 import { useSmallScreen } from "@/helpers/utils";
+import { motion, AnimatePresence } from "framer-motion";
 
 const About = () => {
   const isSmallScreen = useSmallScreen(640);
+
+  const images = [image5, image6, image2];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000); // ✅ changes every 3 second
+
+    return () => clearInterval(interval);
+  }, []);
 
   const downloadResume = () => {
     const link = document.createElement("a");
@@ -46,8 +57,31 @@ const About = () => {
             Numbers don't have to be a headache - I make them work for you!
           </p>
           <p className="text3-xl sm:text-4xl lg:text-6xl">
-            Hey there! I’m Kyla, your friendly
+            Hey there!{" "}
+            <motion.span >
+              {Array.from("I’m Kyla").map((char, index) => (
+                <motion.span
+                  key={index}
+                  className="inline-block"
+                  animate={{
+                    y: [0, -8, 0],
+                    opacity: [1, 0.8, 1],
+                  }}
+                  transition={{
+                    duration: 1,
+                    repeat: Infinity,
+                    repeatDelay: 0,
+                    delay: index * 0.05, // wave timing
+                    ease: "easeInOut",
+                  }}
+                >
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}
+            </motion.span>
+            , your friendly
           </p>
+
           <p className="text3-xl sm:text-4xl lg:text-6xl">
             {" "}
             Virtual Assistant and Bookkeeper{" "}
@@ -60,18 +94,23 @@ const About = () => {
           >
             CONTACT
           </button>
-          {/* <Button variant="outline" className="w-full sm:w-fit mt-5" onClick={handleScrollToContact}>
-            CONTACT
-          </Button> */}
         </div>
       </div>
       <div className="bg-mainBgColor h-fit sm:h-screen  flex flex-col  items-center">
         <div className="hidden sm:flex gap-10 lg:gap-32 r w-10/12 justify-center ">
           <div className="w-screen h-fit flex flex-col">
-            <img
-              src={image5}
-              className="relative top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1   md:w-[400px] lg:w-[600px]"
-            />
+            {/* Motion Image with fade animation */}
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentIndex} // ✅ forces remount
+                src={images[currentIndex]}
+                className="relative top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1 md:w-[400px] lg:w-[600px]"
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.02 }}
+                transition={{ duration: 0.5 }}
+              />
+            </AnimatePresence>
           </div>
           <div className="w-screen pt-4 sm:pt-10 md:pt-18 text-mainDescriptionColor">
             <div className="text-mainDescriptionColor  text-md sm:text-3xl md:text-4xl lg:text-5xl ">
@@ -128,11 +167,17 @@ const About = () => {
         </div>
         <div className="sm:hidden flex flex-col gap-2 lg:gap-32 justify-center ">
           <div className="h-fit flex flex-col">
-            <img
-              src={image5}
-              // relative w-[170px] top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1 justify-items-center
-              className=""
-            />
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={currentIndex} // ✅ forces remount
+                src={images[currentIndex]}
+                className="relative top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1 md:w-[400px] lg:w-[600px]"
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 1.02 }}
+                transition={{ duration: 0.5 }}
+              />
+            </AnimatePresence>
           </div>
           <div className="pt-4 sm:pt-10 md:pt-18 px-2 sm:px-0">
             <div className="text-center text-md sm:text-3xl md:text-4xl lg:text-5xl">

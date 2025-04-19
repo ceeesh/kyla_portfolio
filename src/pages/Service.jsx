@@ -1,6 +1,7 @@
 import React from "react";
 import { services } from "../data/data";
 import { useSmallScreen } from "@/helpers/utils";
+import ServicesCard from "@/components/ui/ServicesCard";
 
 const Service = () => {
   const isSmallScreen = useSmallScreen(640);
@@ -24,20 +25,7 @@ const Service = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-40 lg:gap-14  lg:gap-4 px-6 sm:px-20">
-          {services &&
-            services.map((service, index) => (
-              <div key={index} className={`${service.cssImage}  w-full h-52 sm:h-80 `}>
-                <div className="w-full h-full"></div>
-                <div className="relative flex justify-center top-[-28px]   ">
-                  <div></div>
-                  <div className="px-6 py-4 bg-white rounded-3xl">
-                    {service.title}
-                  </div>
-                  <div></div>
-                </div>
-                <div className="text-center">{service.description}</div>
-              </div>
-            ))}
+          <ServicesCard services={services} />
         </div>
       </div>
     </>

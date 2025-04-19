@@ -105,7 +105,7 @@ export const socials = [
     icon: linkedIn2,
   },
   {
-    link: "https://www.facebook.com/kairiixoxo",
+    link: "https://www.facebook.com/caiiitr",
     name: "Facebook",
     icon: facebook2,
   },
