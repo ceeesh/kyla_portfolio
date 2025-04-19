@@ -102,15 +102,34 @@ body {
   background-size: contain;
 }
 
-@media (max-width: 320px) {
-  
 .mobile-about-image {
- height: 420px;
+  height: 420px; /* default for larger screens */
 }
 
-  
+
+@media (min-width: 320px) {
+  .mobile-about-image {
+    height: 420px;
+  }
 }
 
+@media (min-width: 375px) {
+  .mobile-about-image {
+    height: 500px;
+  }
+}
+
+@media (min-width: 425px) {
+  .mobile-about-image {
+    height: 550px;
+  }
+}
+
+@media (min-width: 639px) {
+  .mobile-about-image {
+    height: 900px; 
+  }
+}
 
 
 @media (max-width: 639px) {

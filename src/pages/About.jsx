@@ -166,7 +166,8 @@ const About = () => {
           </div>
         </div>
         <div className="sm:hidden flex flex-col gap-2 lg:gap-32 justify-center ">
-          <div className="relative mobile-about-image flex flex-col">
+          <div className="relative  mobile-about-image overflow-hidden flex flex-col">
+          {/* */}
           {/* <div className="relative h-[300px] overflow-hidden"> */}
             <AnimatePresence mode="wait">
               <motion.img
