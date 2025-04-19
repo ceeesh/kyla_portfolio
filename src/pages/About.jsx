@@ -22,7 +22,7 @@ const About = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000); // ✅ changes every 3 second
+    }, 2000); // ✅ changes every 2 second
 
     return () => clearInterval(interval);
   }, []);
