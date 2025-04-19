@@ -22,7 +22,7 @@ const About = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 2000); // ✅ changes every 2 second
+    }, 5000); // ✅ changes every 2 second
 
     return () => clearInterval(interval);
   }, []);
@@ -166,7 +166,8 @@ const About = () => {
           </div>
         </div>
         <div className="sm:hidden flex flex-col gap-2 lg:gap-32 justify-center ">
-          <div className="h-fit flex flex-col">
+          <div className="relative mobile-about-image flex flex-col">
+          {/* <div className="relative h-[300px] overflow-hidden"> */}
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentIndex} // ✅ forces remount
