@@ -9,7 +9,7 @@ import image4 from "../assets/image4.jpeg";
 import image5 from "../assets/image5.jpeg";
 import image6 from "../assets/image6.jpeg";
 import image7 from "../assets/image7.jpeg";
-import resume from "../assets/caitlyn_resume.pdf";
+import resume from "../assets/caitlyn_resume3.pdf";
 import { useSmallScreen } from "@/helpers/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
