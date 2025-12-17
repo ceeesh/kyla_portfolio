@@ -9,6 +9,7 @@ import image4 from "../assets/image4.jpeg";
 import image5 from "../assets/image5.jpeg";
 import image6 from "../assets/image6.jpeg";
 import image7 from "../assets/image7.jpeg";
+import image8 from "../assets/new-pic.jpeg";
 import resume from "../assets/caitlyn_resume3.pdf";
 import { useSmallScreen } from "@/helpers/utils";
 import { motion, AnimatePresence } from "framer-motion";
@@ -16,16 +17,16 @@ import { motion, AnimatePresence } from "framer-motion";
 const About = () => {
   const isSmallScreen = useSmallScreen(640);
 
-  const images = [image5, image6, image2];
+  const images = [image8];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 5000); // ✅ changes every 2 second
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex((prev) => (prev + 1) % images.length);
+  //   }, 5000); // ✅ changes every 2 second
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const downloadResume = () => {
     const link = document.createElement("a");
@@ -104,7 +105,7 @@ const About = () => {
               <motion.img
                 key={currentIndex} // ✅ forces remount
                 src={images[currentIndex]}
-                className="relative top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1 md:w-[400px] lg:w-[600px]"
+                className="relative top-[-10px] sm:top-[-30px] md:top-[-37px] lg:top-[-50px] z-1 md:w-[300px] lg:w-[400px] xl:w-[500px]"
                 initial={{ opacity: 0, scale: 0.98 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 1.02 }}
