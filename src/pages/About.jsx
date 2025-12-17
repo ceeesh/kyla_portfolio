@@ -99,7 +99,7 @@ const About = () => {
       </div>
       <div className="bg-mainBgColor h-fit sm:h-screen  flex flex-col  items-center">
         <div className="hidden sm:flex gap-10 lg:gap-32 r w-10/12 justify-center ">
-          <div className="w-screen h-fit flex flex-col">
+          <div className="w-screen h-fit flex flex-col items-end">
             {/* Motion Image with fade animation */}
             <AnimatePresence mode="wait">
               <motion.img
