@@ -15,9 +15,20 @@ function App() {
     setCount(count + 1);
   }
 
+  // Check if current date is between December 1 and January 10
+  const isSnowfallSeason = () => {
+    const now = new Date();
+    const month = now.getMonth(); 
+    const day = now.getDate();
+
+    return (month === 11) || (month === 0 && day <= 10);
+  };
+
   return (
     <>
-      <Snowfall style={{ position: 'fixed', width: '100vw', height: '100vh', zIndex: 9999, pointerEvents: 'none' }} />
+      {isSnowfallSeason() && (
+        <Snowfall style={{ position: 'fixed', width: '100vw', height: '100vh', zIndex: 9999, pointerEvents: 'none' }} />
+      )}
       <div className="w-screen bg-mainBgColor min-h-screen tracking-tight overflow-x-hidden">
         <Header />
         <Hero />
