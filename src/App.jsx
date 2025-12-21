@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import Snowfall from "react-snowfall";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,7 +17,8 @@ function App() {
 
   return (
     <>
-      <div className="w-screen bg-mainBgColor h-screen tracking-tight">
+      <Snowfall style={{ position: 'fixed', width: '100vw', height: '100vh', zIndex: 9999, pointerEvents: 'none' }} />
+      <div className="w-screen bg-mainBgColor min-h-screen tracking-tight overflow-x-hidden">
         <Header />
         <Hero />
         <About />
