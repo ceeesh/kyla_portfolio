@@ -25,8 +25,8 @@ const ServicesCard = ({ services }) => {
             <div className="text-center">{service.description}</div>
 
             {/* Hidden text on hover */}
-            <div className="absolute inset-0 flex items-center justify-center text-white text-xl font-semibold bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-lg">
-              Surprise Text Here!
+            <div className="absolute inset-0 flex items-center justify-center text-white text-sm sm:text-lg lg:text-xl font-semibold bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out rounded-lg px-5 text-center">
+              {service.sub_description}
             </div>
           </div>
         ))}

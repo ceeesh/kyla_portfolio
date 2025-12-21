@@ -18,20 +18,23 @@ export const services = [
   {
     title: "Accounting",
     description:
-      "From invoices to balance sheets—I’ve got your back, virtually!",
+      "From invoices to balance sheets—I've got your back, virtually!",
     cssImage: "bookKeeping",
+    sub_description: "Keeping your books balanced and stress levels low. Expert invoicing, expense tracking, and financial reporting with Xero and QuickBooks so you can focus on growing your business.",
   },
   {
     title: "Virtual Assistance",
     description:
       "Your behind-the-scenes powerhouse—organized, efficient, and always ready to assist!",
     cssImage: "meeting",
+    sub_description: "The extra pair of hands you didn't know you needed. From inbox management to scheduling and admin tasks, I keep your day running smoothly while you focus on what matters.",
   },
   {
     title: "Social Media Management",
     description:
-      "New to the game, but fueled by creativity—I’ll help your brand shine on social media!",
+      "New to the game, but fueled by creativity—I'll help your brand shine on social media!",
     cssImage: "emailManagement",
+    sub_description: "Fresh perspectives meet strategic execution. Building your brand's social presence with engaging content, smart scheduling, and authentic engagement that turns followers into fans.",
   },
 ];
 
