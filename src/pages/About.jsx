@@ -10,7 +10,7 @@ import image5 from "../assets/image5.jpeg";
 import image6 from "../assets/image6.jpeg";
 import image7 from "../assets/image7.jpeg";
 import image8 from "../assets/new-pic.jpeg";
-import resume from "../assets/caitlyn_resume3.pdf";
+import resume from "../assets/Kyla Caitlyn Reyta_CV.pdf";
 import { useSmallScreen } from "@/helpers/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
